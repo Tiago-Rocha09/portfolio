@@ -2,7 +2,7 @@ import { ProgressItemList } from "@/components/progressItemList";
 
 export const Skills = () => {
   return (
-    <section className="bg-gray-750 sm:bg-gray-850 w-full">
+    <section id="skills" className="bg-gray-750 sm:bg-gray-850 w-full">
       <section className="container mt-28 mb-20">
         <header className="mb-12 text-center text-white sm:w-2/3 mx-auto">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4">
