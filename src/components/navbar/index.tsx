@@ -1,13 +1,14 @@
 "use client";
-import { LegacyRef, useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { ImMenu } from "react-icons/im";
 import { AiFillGithub, AiFillLinkedin, AiOutlineClose } from "react-icons/ai";
 import { SocialLink } from "../socialLink";
 
-export const Navbar = () => {
+export const Navbar = ({ dictionary }: { dictionary: any }) => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const ref = useRef<HTMLUListElement>(null);
+  const navbarDictionary = dictionary?.navbar || null;
 
   useEffect(() => {
     const handleOutSideClick = (event: MouseEvent) => {
@@ -50,19 +51,19 @@ export const Navbar = () => {
           />
         </li>
         <li className="p-5 text-sm font-bold text-gray-300 border-b border-b-gray-700 sm:border-b-0">
-          <a href="#home">Home</a>
+          <a href="#home">{navbarDictionary?.home || ""}</a>
         </li>
         <li className="p-5 text-sm font-bold text-gray-300 border-b border-b-gray-700 sm:border-b-0">
-          <a href="#about">About</a>
+          <a href="#about">{navbarDictionary?.about || ""}</a>
         </li>
         <li className="p-5 text-sm font-bold text-gray-300 border-b border-b-gray-700 sm:border-b-0">
-          <a href="#skills">Skills</a>
+          <a href="#skills">{navbarDictionary?.skills || ""}</a>
         </li>
         <li className="p-5 text-sm font-bold text-gray-300 border-b border-b-gray-700 sm:border-b-0">
-          <a href="#portfolio">Portfolio</a>
+          <a href="#portfolio">{navbarDictionary?.portfolio || ""}</a>
         </li>
         <li className="p-5 text-sm font-bold text-gray-300 border-b border-b-gray-700 sm:border-b-0">
-          <a href="#contact">Contact</a>
+          <a href="#contact">{navbarDictionary?.contact || ""}</a>
         </li>
         <li className="p-5 flex gap-2 text-gray-300 sm:hidden">
           <SocialLink

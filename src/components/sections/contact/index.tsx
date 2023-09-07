@@ -1,42 +1,47 @@
 import { Button } from "@/components/downloadButton";
+import { Dictionary } from "@/types/global";
 import { ImLocation, ImWhatsapp } from "react-icons/im";
 import { MdEmail } from "react-icons/md";
 
-export const Contact = () => {
+export const Contact = ({ dictionary }: Dictionary) => {
+  const contactDictionary = dictionary?.contact || null;
+
   return (
     <section id="contact" className="bg-gray-750 sm:bg-gray-850 w-full">
       <section className="container mt-28 mb-20 px-4 sm:px-0">
         <header className="mb-12 text-center text-white sm:w-2/3 mx-auto">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-4">Contato</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold mb-4">
+            {contactDictionary?.title || ""}
+          </h2>
         </header>
         <article className="block sm:flex shadow-sm px-7 sm:px-24 py-6 bg-gray-850 sm:bg-gray-750 rounded-md">
           <form className="sm:w-7/12 flex flex-col gap-5 pr-0 sm:pr-9">
             <h3 className="text-3xl text-white font-bold mb-9">
-              Envie uma mensagem
+              {contactDictionary?.subtitle || ""}
             </h3>
             <fieldset className="w-full">
               <input
-                placeholder="Name"
+                placeholder={contactDictionary?.placeholderName || ""}
                 type="text"
-                className="w-full shadow-sm border border-gray-680 py-5 px-7 rounded-3xl bg-gray-850 sm:bg-gray-750"
+                className="text-white w-full shadow-sm border border-gray-680 py-5 px-7 rounded-3xl bg-gray-850 sm:bg-gray-750"
               />
             </fieldset>
             <fieldset>
               <input
-                placeholder="Email"
+                placeholder={contactDictionary?.placeholderEmail || ""}
                 type="email"
-                className="w-full shadow-sm border border-gray-680 py-5 px-7 rounded-3xl bg-gray-850 sm:bg-gray-750"
+                className="text-white w-full shadow-sm border border-gray-680 py-5 px-7 rounded-3xl bg-gray-850 sm:bg-gray-750"
               />
             </fieldset>
             <fieldset>
               <textarea
-                placeholder="Message"
+                placeholder={contactDictionary?.placeholderMessage || ""}
                 rows={5}
-                className="w-full shadow-sm border border-gray-680 py-5 px-7 rounded-3xl bg-gray-850 sm:bg-gray-750"
+                className="text-white w-full shadow-sm border border-gray-680 py-5 px-7 rounded-3xl bg-gray-850 sm:bg-gray-750"
               />
             </fieldset>
             <Button
-              text="SEND MESSAGE"
+              text={contactDictionary?.sendMessage || ""}
               className="text-white bg-zinc-800 hover:bg-white hover:text-zinc-800 border-white hover:border-zinc-800 border-transparent"
             />
           </form>
@@ -44,15 +49,17 @@ export const Contact = () => {
             <ul className="mt-20">
               <li className="pl-12 pb-4 pt-4 border-b border-b-gray-500 relative">
                 <ImLocation className="absolute left-0 text-3xl" />
-                <h4 className="mb-2 text-base font-semibold">Location</h4>
+                <h4 className="mb-2 text-base font-semibold">
+                  {contactDictionary?.locationTitle || ""}
+                </h4>
                 <address className="not-italic text-gray-350">
-                  Marabá-PA, Brazil
+                  {contactDictionary?.location || ""}
                 </address>
               </li>
               <li className="pl-12 pb-4 pt-8 border-b border-b-gray-500 relative">
                 <ImWhatsapp className="absolute left-0 text-3xl" />
                 <h4 className="mb-2 text-base font-semibold">
-                  WhatsApp number
+                  {contactDictionary?.phoneTitle || ""}
                 </h4>
                 <address className="not-italic text-gray-350">
                   <a href="https://wa.me/5594992628331">(94) 992628331</a>
@@ -60,7 +67,9 @@ export const Contact = () => {
               </li>
               <li className="pl-12 pb-4 pt-8 border-b border-b-gray-500 relative">
                 <MdEmail className="absolute left-0 text-3xl" />
-                <h4 className="mb-2 text-base font-semibold">Email Address</h4>
+                <h4 className="mb-2 text-base font-semibold">
+                  {contactDictionary?.emailTitle || ""}
+                </h4>
                 <address className="not-italic text-gray-350">
                   tiagoarrocha@gmail.com
                 </address>

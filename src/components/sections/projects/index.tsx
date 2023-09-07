@@ -5,16 +5,20 @@ import ctech from "../../../../public/images/ctech.png";
 import eventozz from "../../../../public/images/eventozz.svg";
 import { SocialLink } from "@/components/socialLink";
 import { AiFillGithub } from "react-icons/ai";
+import { Dictionary } from "@/types/global";
 
-export const Projects = () => {
+export const Projects = ({ dictionary }: Dictionary) => {
+  const projectsDictionary = dictionary?.projects || null;
+
   return (
     <section id="portfolio" className="bg-gray-850 sm:bg-gray-750 w-full">
       <section className="container mt-28 mb-20 px-4 sm:px-0">
         <header className="mb-12 text-center text-white sm:w-2/3 mx-auto">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-4">Meus projetos</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold mb-4">
+            {projectsDictionary?.title || ""}
+          </h2>
           <p className="text-gray-350 text-sm sm:text-[16px]">
-            Clique nos cards abaixo para ver alguns dos projetos que tive a
-            oportunidade de participar
+            {projectsDictionary?.subtitle || ""}
           </p>
         </header>
 
@@ -23,34 +27,34 @@ export const Projects = () => {
             <CardProject
               href="https://portalctech.com.br/"
               src={ctech}
-              alt="Imagem logo da empresa CTECH"
+              alt={projectsDictionary?.altLogoCard1 || ""}
             />
           </li>
           <li className="h-full">
             <CardProject
               href="https://franquia.aprincipalbb.com.br/"
               src={aprincipal}
-              alt="Imagem logo da empresa A Principal"
+              alt={projectsDictionary?.altLogoCard2 || ""}
             />
           </li>
           <li className="h-full">
             <CardProject
               href="https://www.contabilhub.com.br/"
               src={contabilhub}
-              alt="Imagem logo da empresa Contábilhub"
+              alt={projectsDictionary?.altLogoCard3 || ""}
             />
           </li>
           <li className="h-full">
             <CardProject
               href="https://www.eventozz.com/"
               src={eventozz}
-              alt="Imagem logo da empresa Eventozz"
+              alt={projectsDictionary?.altLogoCard4 || ""}
             />
           </li>
         </ul>
         <p className="flex justify-center items-center mt-9 text-white gap-2">
           <a href="https://github.com/Tiago-Rocha09" target="_blank">
-            Ver mais
+            {projectsDictionary?.viewMore || ""}
           </a>
           <SocialLink
             icon={

@@ -1,0 +1,55 @@
+{
+  "navbar": {
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "portfolio": "Portfolio",
+    "contact": "Contact"
+  },
+  "home": {
+    "line1": "Hello, I'm"
+  },
+  "about": {
+    "yearsExperience": "5+",
+    "yearsExperienceText": "years of experience",
+    "projects": "30+",
+    "projectsText": "projects",
+    "title": "About Me",
+    "subtitle": "I have been working in the programming market since 2017 and have over 2 years of experience with remote work. I hold a bachelor's degree in Computer Engineering from UNIFESSPA (Federal University of South and Southeast of Pará).",
+    "descriptionLine1": "With over 5 years of experience in the software development market, I work with JavaScript in applications on the front-end, back-end, and mobile. The area in which I have the most experience is front-end development using React.js, sometimes alongside Next.js.",
+    "descriptionLine2": "I have been enhancing my work by developing REST APIs using Node.js, and whenever possible, I get involved in building mobile applications within the projects at my company, Ctech.",
+    "descriptionLine3": "I have participated in the creation of various websites and their management systems, such as <a href='https://www.eventozz.com/'>Eventozz</a> and <a href='https://www.contabilhub.com.br/'>contábilhub.</a>",
+    "descriptionLine4": "I have over two years of experience with remote work, consistently using tools such as Trello, Jira, and Git."
+  },
+  "skills": {
+    "title": "Skills",
+    "subtitle": "React and Node are the technologies I use most in my day-to-day work, but I also have experience with various others.",
+    "years": "years"
+  },
+  "projects": {
+    "title": "My projects",
+    "subtitle": "Click on the cards below to see some of the projects I've had the opportunity to be a part of.",
+    "altLogoCard1": "Image of the CTECH company logo",
+    "altLogoCard2": "Image of the A Principal company logo",
+    "altLogoCard3": "Image of the Contábilhub company logo",
+    "altLogoCard4": "Image of the Eventozz company logo",
+    "viewMore": "View more"
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Send a message",
+    "placeholderName": "Name",
+    "placeholderEmail": "Email",
+    "placeholderMessage": "Message",
+    "sendMessage": "Send message",
+    "location": "Marabá-PA, Brazil",
+    "locationTitle": "Location",
+    "phoneTitle": "WhatsApp number",
+    "emailTitle": "Email address"
+  },
+  "shared": {
+    "downloadCv": "DOWNLOAD CV",
+    "name": "Tiago Rocha",
+    "job": "Full Stack Developer"
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "navbar": {
+    "home": "Home",
+    "about": "Sobre",
+    "skills": "Tecnologias",
+    "portfolio": "Portfólio",
+    "contact": "Contato"
+  },
+  "home": {
+    "line1": "Olá, eu sou"
+  },
+  "about": {
+    "yearsExperience": "5+",
+    "yearsExperienceText": "anos de experiência",
+    "projects": "30+",
+    "projectsText": "projetos",
+    "title": "Sobre mim",
+    "subtitle": "Atuo no mercado de progamação desde 2017. Experiência com trabalho remoto há mais de 2 anos. Tenho graduação em Engenharia da Computação pela <abbr>UNIFESSPA</abbr> (Universidade Federal do Sul e Sudeste do Pará)",
+    "descriptionLine1": "Com mais de 5 anos no mercado de desenvolvimento de software, trabalho com javascript em aplicações no front-end, back-end e mobile. A área que tenho mais experiência é o desenvolvimento front-end utilizando React.js, as vezes o utilizando ao lado Next.js.",
+    "descriptionLine2": "Tenho aprimorado meu trabalho com o desenvolvimento de APIs REST utilizando Node.js e sempre que possível me envolvo na construção de aplicações mobiles nos projetos da minha empresa Ctech.",
+    "descriptionLine3": "Participei da criação de vários sites e seus sistemas de gerenciamento, como: <a href='https://www.eventozz.com/'>Eventozz</a> e <a href='https://www.contabilhub.com.br/'>contábilhub.</a> Tenho experiência com trabalho remoto já há mais de dois anos, sempre utilizando ferramentas como Trello/Jira e git.",
+    "descriptionLine4": "Tenho experiência com trabalho remoto já há mais de dois anos, sempre utilizando ferramentas como Trello/Jira e git."
+  },
+  "skills": {
+    "title": "Linguagens de programação e Frameworks",
+    "subtitle": "React e Node são as tecnologias que mais utilizo no meu dia a dia, mas tenho experiência com diversas outras...",
+    "years": "anos"
+  },
+  "projects": {
+    "title": "Meus projetos",
+    "subtitle": "Clique nos cards abaixo para ver alguns dos projetos que tive a oportunidade de participar",
+    "altLogoCard1": "Imagem logo da empresa CTECH",
+    "altLogoCard2": "Imagem logo da empresa A Principal",
+    "altLogoCard3": "Imagem logo da empresa Contábilhub",
+    "altLogoCard4": "Imagem logo da empresa Eventozz",
+    "viewMore": "Ver mais"
+  },
+  "contact": {
+    "title": "Contato",
+    "subtitle": "Envie uma mensagem",
+    "placeholderName": "Nome",
+    "placeholderEmail": "Email",
+    "placeholderMessage": "Mensagem",
+    "sendMessage": "Enviar mensagem",
+    "location": "Marabá-PA, Brasil",
+    "locationTitle": "Localização",
+    "phoneTitle": "WhatsApp",
+    "emailTitle": "Email"
+  },
+  "shared": {
+    "downloadCv": "DOWNLOAD CV",
+    "name": "Tiago Rocha",
+    "job": "Desenvolvedor Full Stack"
+  }
+}

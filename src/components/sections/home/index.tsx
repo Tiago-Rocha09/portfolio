@@ -3,19 +3,27 @@ import profileImage from "../../../../public/images/tiago-rocha.png";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { SocialLink } from "@/components/socialLink";
 import { Button } from "@/components/downloadButton";
+import { Dictionary } from "@/types/global";
 
-export const Home = () => {
+export const Home = ({ dictionary }: Dictionary) => {
+  const homeDictionary = dictionary?.home || null;
+  const sharedDictionary = dictionary?.shared || null;
+
   return (
     <section id="home" className="bg-gray-850 w-full">
       <section className="container flex relative">
         <header className="flex flex-col text-white mt-auto mb-auto gap-3 w-full sm:w-auto p-4 sm:p-0 pt-28 sm:pt-0 pb-36 sm:pb-0">
-          <p className="text-lg sm:text-2xl font-semibold">Hello, I&apos;m</p>
-          <h1 className="text-4xl sm:text-7xl font-bold">Tiago Rocha.</h1>
+          <p className="text-lg sm:text-2xl font-semibold">
+            {homeDictionary?.line1 || ""}
+          </p>
+          <h1 className="text-4xl sm:text-7xl font-bold">
+            {sharedDictionary?.name || ""}
+          </h1>
           <p className="text-2xl sm:text-3xl font-semibold">
-            Full Stack developer
+            {sharedDictionary?.job || ""}
           </p>
           <Button
-            text="DOWNLOAD CV"
+            text={sharedDictionary?.downloadCv || ""}
             className="bg-transparent hover:bg-white hover:text-zinc-800 border-white hover:border-zinc-800 my-8"
           />
           <ul className="flex gap-2">
