@@ -1,10 +1,49 @@
-import { Button } from "@/components/downloadButton";
+"use client";
 import { Dictionary } from "@/types/global";
+import { useCallback, useState } from "react";
 import { ImLocation, ImWhatsapp } from "react-icons/im";
 import { MdEmail } from "react-icons/md";
 
 export const Contact = ({ dictionary }: Dictionary) => {
   const contactDictionary = dictionary?.contact || null;
+
+  const [email, setEmail] = useState("");
+  const [name, setName] = useState("");
+  const [message, setMessage] = useState("");
+
+  const sendEmail = useCallback(() => {
+    const data = {
+      message,
+      email,
+      name,
+    };
+
+    const requestOptions = {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    };
+
+    fetch("/api/send-message", requestOptions)
+      .then((response) => {
+        console.log({ response });
+
+        if (!response.ok) {
+          throw new Error("Network response was not ok");
+        }
+        return response.json();
+      })
+      .then((responseData) => {
+        console.log("Response:", responseData);
+        return true;
+      })
+      .catch((error) => {
+        console.error("Fetch error:", error);
+        return false;
+      });
+  }, [email, message, name]);
 
   return (
     <section id="contact" className="bg-gray-750 sm:bg-gray-850 w-full">
@@ -24,6 +63,7 @@ export const Contact = ({ dictionary }: Dictionary) => {
                 placeholder={contactDictionary?.placeholderName || ""}
                 type="text"
                 className="text-white w-full shadow-sm border border-gray-680 py-5 px-7 rounded-3xl bg-gray-850 sm:bg-gray-750"
+                onChange={(event) => setName(event.target.value)}
               />
             </fieldset>
             <fieldset>
@@ -31,6 +71,7 @@ export const Contact = ({ dictionary }: Dictionary) => {
                 placeholder={contactDictionary?.placeholderEmail || ""}
                 type="email"
                 className="text-white w-full shadow-sm border border-gray-680 py-5 px-7 rounded-3xl bg-gray-850 sm:bg-gray-750"
+                onChange={(event) => setEmail(event.target.value)}
               />
             </fieldset>
             <fieldset>
@@ -38,12 +79,16 @@ export const Contact = ({ dictionary }: Dictionary) => {
                 placeholder={contactDictionary?.placeholderMessage || ""}
                 rows={5}
                 className="text-white w-full shadow-sm border border-gray-680 py-5 px-7 rounded-3xl bg-gray-850 sm:bg-gray-750"
+                onChange={(event) => setMessage(event.target.value)}
               />
             </fieldset>
-            <Button
-              text={contactDictionary?.sendMessage || ""}
-              className="text-white bg-zinc-800 hover:bg-white hover:text-zinc-800 border-white hover:border-zinc-800 border-transparent"
-            />
+            <button
+              type="button"
+              className="w-fit px-8 py-3 rounded-3xl border-solid border transition-colors delay-100 ease-linear font-bold text-white bg-zinc-800 hover:bg-white hover:text-zinc-800 border-white hover:border-zinc-800 border-transparent"
+              onClick={() => sendEmail()}
+            >
+              {contactDictionary?.sendMessage || ""}
+            </button>
           </form>
           <aside className="sm:w-5/12 text-white pl-0 sm:pl-9">
             <ul className="mt-20">
