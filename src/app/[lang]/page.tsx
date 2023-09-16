@@ -18,7 +18,7 @@ export default async function HomePage(props: HomePageProps) {
 
   return (
     <>
-      <Navbar dictionary={dictionary} />
+      <Navbar dictionary={dictionary} language={lang} />
       <main className="flex min-h-screen flex-col items-center">
         <Home dictionary={dictionary} />
         <Summary dictionary={dictionary} />
