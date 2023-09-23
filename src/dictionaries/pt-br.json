@@ -45,7 +45,10 @@
     "location": "Marabá-PA, Brasil",
     "locationTitle": "Localização",
     "phoneTitle": "WhatsApp",
-    "emailTitle": "Email"
+    "emailTitle": "Email",
+    "sendingMessage": "Enviando mensagem",
+    "messageSent": "Mensagem enviada",
+    "messageNotSent": "Não foi possível enviar a mensagem"
   },
   "shared": {
     "downloadCv": "DOWNLOAD CV",

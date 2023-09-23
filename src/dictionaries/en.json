@@ -45,7 +45,10 @@
     "location": "Marabá-PA, Brazil",
     "locationTitle": "Location",
     "phoneTitle": "WhatsApp number",
-    "emailTitle": "Email address"
+    "emailTitle": "Email address",
+    "sendingMessage": "Sending message",
+    "messageSent": "Message sent",
+    "messageNotSent": "Unable to send message"
   },
   "shared": {
     "downloadCv": "DOWNLOAD CV",

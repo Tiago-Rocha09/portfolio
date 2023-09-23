@@ -46,7 +46,7 @@ export const Navbar = ({
         className={`container block fixed top-0 w-4/5 right-0 pt-16 bg-gray-750 z-10
                     sm:pt-0 sm:h-auto sm:w-full sm:relative sm:flex sm:justify-center sm:opacity-100
                     ${
-                      menuOpen ? "opacity-100 h-screen" : "opacity-0 h-0"
+                      menuOpen ? "opacity-100 h-screen z-10" : "opacity-0 h-0 -z-10"
                     } sm:visible
                     transition-all delay-150
                   `}
