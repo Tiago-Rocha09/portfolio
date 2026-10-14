@@ -1,0 +1,366 @@
+{
+  "Meta": {
+    "homeTitle": "Tiago Rocha — Home",
+    "homeDescription": "Engenheiro full stack na EON, em trabalho remoto desde 2021.",
+    "aiTitle": "Tiago Rocha — Engenharia com IA",
+    "aiDescription": "A IA escreve rápido. O processo garante que ela escreva a coisa certa."
+  },
+  "Chrome": {
+    "name": "Tiago Rocha",
+    "language": "Idioma",
+    "pt": "PT",
+    "en": "EN",
+    "navLabel": "Principal",
+    "homeNav": {
+      "stack": "Stack",
+      "work": "Trabalhos",
+      "experience": "Experiência",
+      "ai": "Engenharia com IA"
+    },
+    "aiNav": {
+      "home": "Home",
+      "kits": "Kits",
+      "proof": "Prova",
+      "product": "Produto",
+      "guardrails": "Guardrails",
+      "current": "Engenharia com IA"
+    },
+    "footer": {
+      "kicker": "ONDE ME ENCONTRAR",
+      "linkedin": "LinkedIn",
+      "copy": "© 2026 Tiago Rocha · Marabá-PA, Brasil",
+      "github": "GitHub",
+      "ai": "Engenharia com IA",
+      "home": "Home"
+    }
+  },
+  "Home": {
+    "eyebrow": "Engenheiro de Software Full Stack",
+    "title": "Engenheiro full stack.",
+    "lead": "9 anos de mercado, do front-end à infraestrutura — em trabalho remoto desde 2021. Hoje, na EON, desenvolvo para clientes como <strong>Fraport Brasil</strong> e <strong>grupo Votorantim</strong> com React, Next.js, Laravel e Node — e uso IA como processo de engenharia, não como atalho.",
+    "linkedinCta": "LinkedIn ↗",
+    "seeWork": "Ver trabalhos",
+    "statsLabel": "Números",
+    "stats": [
+      { "value": "9 anos", "label": "de mercado, desde 2017" },
+      { "value": "5 anos", "label": "de trabalho remoto, desde 2021" },
+      { "value": "10+", "label": "sites corporativos na plataforma que mantenho" }
+    ],
+    "stackKicker": "01 — STACK PRINCIPAL",
+    "stackTitle": "Full stack de verdade: do componente ao servidor.",
+    "stack": [
+      {
+        "area": "FRONT-END",
+        "main": "React · Next.js\nTypeScript",
+        "desc": "Minha base desde 2017. Hoje em Next.js 16 com App Router, React 19 e Tailwind v4.",
+        "more": "Tailwind · MUI · Motion · React Aria"
+      },
+      {
+        "area": "BACK-END",
+        "main": "Laravel · Node.js\nMySQL · Redis",
+        "desc": "APIs e CMSs headless em Laravel 9–12; serviços em Node 22 com Express e TypeScript.",
+        "more": "PHP 8 · Express 5 · Drizzle · Knex"
+      },
+      {
+        "area": "INFRA",
+        "main": "Docker · AWS\nCI/CD",
+        "desc": "Do container ao deploy: ECS, EC2, KMS e S3, com pipelines e observabilidade.",
+        "more": "GitHub Actions · Bitbucket · Cloudflare · OpenTelemetry"
+      },
+      {
+        "area": "IA",
+        "main": "Claude Code · MCP\nGemini",
+        "desc": "Kits de Spec-Driven Development, servidores MCP e APIs de LLM em produção.",
+        "more": "commands · rules · hooks · OAuth para agentes"
+      }
+    ],
+    "bandKicker": "02 — ENGENHARIA COM IA",
+    "bandTitle": "Transformo IA em processo de engenharia.",
+    "bandText": "Evoluo e mantenho os dois kits de Spec-Driven Development que o time da EON usa com o Claude Code: specs aprovadas antes do código, verificador independente e evidência de teste.",
+    "bandCta": "Ver o trabalho com IA →",
+    "bandItems": [
+      {
+        "title": "Kits de IA do time",
+        "text": "SDD multi-stack (Laravel/Next.js) e o kit do template WordPress."
+      },
+      {
+        "title": "Produto que a IA opera",
+        "text": "Servidor MCP e API com Gemini no Kortex, com OAuth e auditoria."
+      },
+      {
+        "title": "Guardrails de produção",
+        "text": "Escrita em servidor só com aprovação humana de uso único."
+      }
+    ],
+    "workKicker": "03 — TRABALHOS PRINCIPAIS",
+    "workTitle": "O que tenho construído.",
+    "workIntro": "Projetos de clientes atendidos pela EON e produtos da própria EON.",
+    "cases": [
+      {
+        "title": "Fraport Brasil",
+        "tag": "CLIENTE EON · DEV PRINCIPAL",
+        "img": "[print do site do aeroporto]",
+        "imgLabel": "Site do Aeroporto Internacional de Porto Alegre, com o painel de voos",
+        "image": "/works/fraport.jpg",
+        "imageWidth": 1355,
+        "imageHeight": 960,
+        "href": "https://portoalegre-airport.com.br/pt",
+        "text": "CMS e sites multi-idioma dos aeroportos da Fraport Brasil. Sou o desenvolvedor principal desde o início do projeto.",
+        "points": [
+          "Painel de voos nos sites dos aeroportos",
+          "Mapas interativos dos terminais e tradução automática",
+          "CI/CD com testes, imagens Docker e releases separadas de homologação e produção"
+        ],
+        "stack": "Laravel · Next.js · React · Redis · Docker · AWS ECS"
+      },
+      {
+        "title": "Grupo Votorantim",
+        "tag": "CLIENTE EON · PLATAFORMA",
+        "img": "[print do site do grupo]",
+        "imgLabel": "Site do grupo Votorantim, com a campanha de 90 anos",
+        "image": "/works/votorantim.jpg",
+        "imageWidth": 1751,
+        "imageHeight": 958,
+        "href": "https://www.votorantimcimentos.com/",
+        "text": "Sites do grupo na plataforma WordPress corporativa da EON.",
+        "points": [
+          "Principal desenvolvedor dos sites do grupo",
+          "Deploy por escopo, sem derrubar o site em atualizações de rotina",
+          "Resposta a incidente: causa raiz, correção e post-mortem"
+        ],
+        "stack": "WordPress · PHP 8 · ACF · Docker · AWS · Cloudflare"
+      },
+      {
+        "title": "Kortex",
+        "tag": "PRODUTO EON · DEV PRINCIPAL",
+        "img": "[print do painel do Kortex]",
+        "imgLabel": "Painel do Kortex, com a lista de páginas do site da EON",
+        "image": "/works/kortex.jpg",
+        "imageWidth": 1423,
+        "imageHeight": 807,
+        "text": "CMS headless multi-tenant da EON, nascido da generalização do CMS da Fraport. Sou o principal desenvolvedor, do backend à observabilidade.",
+        "points": [
+          "Servidor MCP com 20 ferramentas: agentes de IA editam e publicam páginas",
+          "Preview ao vivo, publicação agendada e tradução automática",
+          "OpenTelemetry ponta a ponta; memória da API de ~402 para ~143 MiB"
+        ],
+        "stack": "Laravel 12 · Next.js 16 · Node 22 · MySQL · Redis · AWS KMS"
+      },
+      {
+        "title": "Site da EON",
+        "tag": "EONLAB.COM.BR · PRIMEIRO SITE NO KORTEX",
+        "img": "[print eonlab.com.br]",
+        "imgLabel": "Página inicial do site da EON",
+        "image": "/works/eon.jpg",
+        "imageWidth": 1408,
+        "imageHeight": 767,
+        "href": "https://eonlab.com.br/pt",
+        "text": "O site institucional da EON, o primeiro a rodar sobre o Kortex. Fui o principal desenvolvedor do front.",
+        "points": [
+          "Páginas montadas por seções vindas do CMS, com preview ao vivo de rascunhos",
+          "Multi-idioma, tema claro/escuro, blog e página de cases",
+          "Fidelidade ao Figma, com animações e acessibilidade (React Aria)"
+        ],
+        "stack": "Next.js 16 · React 19 · Tailwind v4 · Motion · React Aria"
+      }
+    ],
+    "experienceKicker": "04 — EXPERIÊNCIA",
+    "experience": [
+      {
+        "when": "jun/2021 — hoje",
+        "org": "EON",
+        "role": "Engenheiro de Software Full Stack",
+        "text": "Fraport Brasil, grupo Votorantim, Auren energia, Nexa Resources, entre outros. Kortex e site da EON. Kits de IA do time. Trabalho remoto desde 2021, de Marabá-PA."
+      },
+      {
+        "when": "jan/2019 — dez/2023",
+        "org": "Ctech",
+        "role": "Desenvolvedor Full Stack",
+        "text": "Sites e sistemas de gestão, APIs em Node, apps mobile e integrações de ERPs com sistemas de envio de mensagens."
+      },
+      {
+        "when": "Formação",
+        "org": "UNIFESSPA",
+        "role": "Engenharia da Computação",
+        "text": "Universidade Federal do Sul e Sudeste do Pará."
+      }
+    ]
+  },
+  "Ai": {
+    "back": "← Home",
+    "kicker": "ENGENHARIA COM IA",
+    "title": "A IA escreve rápido. O processo garante que ela escreva a <accent>coisa certa</accent>.",
+    "lead": "Na EON, meu trabalho com IA não é usar um assistente para escrever código mais rápido. É fazer agentes de IA funcionarem dentro de um time de engenharia real: com método, ferramentas, produto e travas de segurança.",
+    "layersTitle": "As quatro camadas",
+    "layers": [
+      {
+        "n": "01",
+        "title": "Metodologia",
+        "text": "Specs aprovadas por humanos antes do código, critérios de aceite que viram testes, documentação que acompanha o código.",
+        "where": "Spec-Driven Development · EARS"
+      },
+      {
+        "n": "02",
+        "title": "Ferramentas",
+        "text": "Kits, comandos e verificadores que levam o método para cada repositório do time.",
+        "where": "SDD Kit · Kit WordPress · 13 repos"
+      },
+      {
+        "n": "03",
+        "title": "Produto",
+        "text": "Sistemas que agentes de IA conseguem operar com segurança e auditoria.",
+        "where": "Kortex · MCP · OAuth · Gemini"
+      },
+      {
+        "n": "04",
+        "title": "Guardrails",
+        "text": "Travas que mantêm agentes longe de mudanças não aprovadas em produção.",
+        "where": "Hooks · ticket humano de uso único"
+      }
+    ],
+    "flowKicker": "01 — O FLUXO",
+    "flowTitle": "Spec-Driven Development: nada é implementado sem ter sido especificado.",
+    "flowAria": "Etapas do fluxo",
+    "steps": [
+      { "n": "1", "title": "Spec", "text": "PRD e critérios EARS aprovados por uma pessoa" },
+      { "n": "2", "title": "Plano", "text": "Decisões técnicas e modelagem do domínio" },
+      { "n": "3", "title": "Tarefas", "text": "Passos atômicos, cada um rastreável à spec" },
+      { "n": "4", "title": "Implementação", "text": "O agente executa dentro do escopo aprovado" },
+      { "n": "5", "title": "Verificador", "text": "Um agente independente confere contra spec e design" },
+      { "n": "6", "title": "Evidência", "text": "Roteiro de verificação com prints do navegador" }
+    ],
+    "principles": [
+      { "title": "Spec antes do código", "text": "O agente não decide o escopo. Uma pessoa aprova." },
+      { "title": "Critério de aceite = teste", "text": "Cada CA-NN vira um roteiro de verificação. Nada se testa por fora da spec." },
+      { "title": "Quem escreve não confere", "text": "O verificador não é o mesmo agente que implementou." },
+      { "title": "Doc acompanha código", "text": "Quando os dois divergem, o agente para e pergunta." },
+      { "title": "Produção tem dono humano", "text": "Escrita só com ticket de uso único, aprovado por uma pessoa." }
+    ],
+    "kitsKicker": "02 — OS KITS DE IA DO TIME",
+    "kitsTitle": "Dois kits que levam o método a cada repositório.",
+    "kitsIntro": "Os dois kits nasceram com colegas da EON. Eu assumi a evolução e a manutenção: hoje conduzo as mudanças, reviso os PRs e levo as novas versões para os projetos.",
+    "brought": "O QUE EU TROUXE",
+    "sddKicker": "LARAVEL · NEXT.JS",
+    "sddTitle": "SDD Kit multi-stack",
+    "sddText": "Kit portátil de Spec-Driven Development para o Claude Code: organiza o repositório por domínios de negócio, gera documentação a partir do código e conduz cada nova feature por specs aprovadas.",
+    "sddMetrics": [
+      { "label": "releases conduzidas", "value": "5" },
+      { "label": "repositórios usando", "value": "8" },
+      { "label": "stacks suportadas", "value": "3" }
+    ],
+    "sddkit": [
+      {
+        "title": "De só-Laravel para multi-stack",
+        "text": "Sistema de stack profiles (Laravel, Next.js App Router e Pages) com detecção automática de stack e de arquétipo, sem duplicar a metodologia."
+      },
+      {
+        "title": "/dev:build-cms-section-front",
+        "text": "Gera seções do CMS no front com fidelidade pixel a pixel ao Figma, conferidas por um harness no navegador."
+      },
+      {
+        "title": "/dev:build-cms-section-json",
+        "text": "Blueprint de seções com contrato de props, escrita em etapas e verificador independente."
+      },
+      {
+        "title": "Regra doc-sync + /dev:quick-fix",
+        "text": "Em ajustes pontuais, o agente detecta divergência entre doc e código e pergunta antes de seguir."
+      },
+      {
+        "title": "Instalação e atualização",
+        "text": "Scripts para Mac e Linux; o update preserva as customizações de cada projeto."
+      }
+    ],
+    "wpKicker": "WORDPRESS",
+    "wpTitle": "Kit SDD do template WordPress",
+    "wpText": "Especializa o agente no jeito EON de fazer WordPress — constituição, doutrina por arquétipo de site, hardening — e chega a cada site de cliente a partir do template.",
+    "commands": [
+      { "text": "/eon-new → /eon-prd → /eon-spec", "muted": false },
+      { "text": "→ /eon-domain → /eon-plan → /eon-tasks", "muted": false },
+      { "text": "/eon-reverse · baseline de projetos existentes", "muted": true }
+    ],
+    "wpkit": [
+      {
+        "title": "Governança do kit",
+        "text": "O kit só muda no template, por PR, e chega aos sites por versão — fim das cópias divergentes entre clientes."
+      },
+      {
+        "title": "Instalador e atualizador",
+        "text": "install-sdd.sh leva o kit e suas atualizações para os repositórios dos clientes."
+      },
+      {
+        "title": "Rollout em 5 sites",
+        "text": "Votorantim Cimentos, Verdera, Nexa, Quimatic e CESP trabalhando com o mesmo processo."
+      },
+      {
+        "title": "Primeira feature pelo fluxo",
+        "text": "O plugin eon-activity-log, feito de ponta a ponta com o kit — detalhes logo abaixo."
+      }
+    ],
+    "proofKicker": "03 — A PROVA",
+    "proofTitle": "Uma feature real, feita inteira pelo fluxo — e em produção.",
+    "proofLead": "Muita empresa tem um kit de IA. Faltava mostrar o kit entregando. O plugin <strong>eon-activity-log</strong> — trilha de auditoria do painel WordPress — foi o primeiro: do PRD à evidência de teste, sem atalho.",
+    "proof": [
+      {
+        "when": "spec 001 · out/2026",
+        "title": "PRD → tarefas",
+        "text": "Log de acesso, usuários, conteúdo, mídia, plugins e deploy registrado como “Sistema”."
+      },
+      {
+        "when": "v1.0 → v1.1",
+        "title": "Em produção",
+        "text": "Instalado no site da Votorantim Cimentos via tag e instalador de plugins."
+      },
+      {
+        "when": "spec 002 · out/2026",
+        "title": "Segunda volta",
+        "text": "Personalizar, menus, 65 opções de configuração e tela com antes/depois."
+      },
+      {
+        "when": "v1.2.0",
+        "title": "Verificado com evidência",
+        "text": "Critérios EARS viraram roteiros de verificação com prints do navegador."
+      }
+    ],
+    "productKicker": "04 — PRODUTO QUE A IA OPERA",
+    "productTitle": "No Kortex, agentes são usuários de primeira classe.",
+    "products": [
+      {
+        "kicker": "SERVIDOR MCP",
+        "title": "20 ferramentas para agentes editarem o CMS",
+        "text": "Claude e Cursor criam, editam, agendam e publicam páginas e ajustam SEO direto no CMS.",
+        "points": [
+          "O backend é o servidor OAuth: o agente entra com a permissão de quem autorizou",
+          "Toda alteração feita por IA fica marcada no histórico e na auditoria"
+        ],
+        "stack": "TypeScript · MCP SDK · Express 5 · Drizzle · Zod"
+      },
+      {
+        "kicker": "API DE IA",
+        "title": "IA generativa por cliente, com custo sob controle",
+        "text": "Assistente de escrita do CMS sobre o Gemini, onde cada cliente usa a própria chave.",
+        "points": [
+          "Chaves guardadas com criptografia no AWS KMS",
+          "Cada chamada registra custo, quota e se a sugestão foi aceita"
+        ],
+        "stack": "Node 22 · TypeScript · Gemini · AWS KMS · OpenTelemetry"
+      }
+    ],
+    "guardKicker": "05 — GUARDRAILS",
+    "guardTitle": "Uma trava que o agente abre não é trava.",
+    "guardP1": "Um hook que roda antes de qualquer comando do agente — inclusive no modo sem permissões. Leitura em produção passa livre. Escrita, ou leitura de credencial, exige um ticket de uso único aprovado por uma pessoa e casado pelo hash do comando exato. O agente não consegue emitir o ticket nem editar a trava.",
+    "guardP2": "Junto dele, um wrapper de wp-cli para todos os ambientes que impede recriar containers por engano e bloqueia operações destrutivas.",
+    "readPrompt": "agente $",
+    "readCommand": "docker logs app --tail 50",
+    "readOk": "✓ leitura — liberado",
+    "writePrompt": "agente $",
+    "writeCommand": "docker restart app",
+    "writeBad": "✕ escrita em produção — bloqueado, pedido registrado",
+    "humanPrompt": "humano $",
+    "humanCommand": "prod-ok",
+    "ticketOk": "✓ ticket de uso único · sha256 do comando · 10 min",
+    "agentPrompt": "agente $",
+    "agentCommand": "prod-ok",
+    "agentBad": "✕ só uma pessoa aprova",
+    "caption": "Ilustração do fluxo de aprovação. Bash + hooks do Claude Code."
+  }
+}
