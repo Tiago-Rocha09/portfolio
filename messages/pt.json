@@ -47,7 +47,7 @@
       { "value": "10+", "label": "sites corporativos na plataforma que mantenho" }
     ],
     "stackKicker": "01 — STACK PRINCIPAL",
-    "stackTitle": "Full stack de verdade: do componente ao servidor.",
+    "stackTitle": "Desenvolvimento full stack, do frontend à infraestrutura.",
     "stack": [
       {
         "area": "FRONT-END",
@@ -203,7 +203,7 @@
         "n": "02",
         "title": "Ferramentas",
         "text": "Kits, comandos e verificadores que levam o método para cada repositório do time.",
-        "where": "SDD Kit · 8 repositórios · Kit WordPress · 5 sites"
+        "where": "13 repositórios · 8 no SDD Kit · 5 sites"
       },
       {
         "n": "03",
@@ -219,7 +219,8 @@
       }
     ],
     "flowKicker": "01 — O FLUXO",
-    "flowTitle": "Spec-Driven Development: nada é implementado sem ter sido especificado.",
+    "flowTitle": "O fluxo parte de especificações aprovadas.",
+    "flowLead": "Critérios de aceite se vinculam aos testes, e um verificador independente confere o trabalho antes da conclusão.",
     "flowAria": "Etapas do fluxo",
     "steps": [
       { "n": "1", "title": "Spec", "text": "PRD e critérios EARS aprovados por uma pessoa" },
@@ -227,24 +228,24 @@
       { "n": "3", "title": "Tarefas", "text": "Passos atômicos, cada um rastreável à spec" },
       { "n": "4", "title": "Implementação", "text": "O agente executa dentro do escopo aprovado" },
       { "n": "5", "title": "Verificador", "text": "Um agente independente confere contra spec e design" },
-      { "n": "6", "title": "Evidência", "text": "Roteiro de verificação com prints do navegador" }
+      { "n": "6", "title": "Evidência", "text": "Roteiro de verificação com capturas de tela do navegador" }
     ],
     "principles": [
       { "title": "Spec antes do código", "text": "O agente não decide o escopo. Uma pessoa aprova." },
-      { "title": "Critério de aceite = teste", "text": "Cada CA-NN vira um roteiro de verificação. Nada se testa por fora da spec." },
+      { "title": "Critério de aceite = teste", "text": "Cada CA-NN vira um roteiro de verificação ligado à spec." },
       { "title": "Quem escreve não confere", "text": "O verificador não é o mesmo agente que implementou." },
       { "title": "Doc acompanha código", "text": "Quando os dois divergem, o agente para e pergunta." },
       { "title": "Produção tem dono humano", "text": "Escrita só com ticket de uso único, aprovado por uma pessoa." }
     ],
     "kitsKicker": "02 — OS KITS DE IA DO TIME",
     "kitsTitle": "Dois kits que levam o método a cada repositório.",
-    "kitsIntro": "Os dois kits nasceram com colegas da EON. Eu assumi a evolução e a manutenção: hoje conduzo as mudanças, reviso os PRs e levo as novas versões para os projetos. Juntos, cobrem 13 repositórios: 8 no SDD Kit e 5 no kit WordPress.",
+    "kitsIntro": "Os dois kits nasceram com colegas da EON. Eu assumi a evolução e a manutenção: hoje conduzo as mudanças, reviso os PRs e levo as novas versões para os projetos. São 13 repositórios atendidos pelos dois kits: 8 repositórios usando o SDD Kit multi-stack e 5 no kit WordPress.",
     "brought": "O QUE EU TROUXE",
     "sddKicker": "LARAVEL · NEXT.JS",
     "sddTitle": "SDD Kit multi-stack",
     "sddText": "Kit portátil de Spec-Driven Development para o Claude Code: organiza o repositório por domínios de negócio, gera documentação a partir do código e conduz cada nova feature por specs aprovadas.",
     "sddMetrics": [
-      { "label": "releases conduzidas", "value": "5" },
+      { "label": "versões conduzidas", "value": "5" },
       { "label": "repositórios usando", "value": "8" },
       { "label": "stacks suportadas", "value": "3" }
     ],
@@ -288,7 +289,7 @@
         "text": "install-sdd.sh leva o kit e suas atualizações para os repositórios dos clientes."
       },
       {
-        "title": "Rollout em 5 sites",
+        "title": "Implantação em 5 sites",
         "text": "Votorantim Cimentos, Verdera, Nexa, Quimatic e CESP trabalhando com o mesmo processo."
       },
       {
@@ -297,8 +298,8 @@
       }
     ],
     "proofKicker": "03 — A PROVA",
-    "proofTitle": "Uma feature real, feita inteira pelo fluxo — e em produção.",
-    "proofLead": "Muita empresa tem um kit de IA. Para mostrar o fluxo na prática, desenvolvi o plugin <strong>eon-activity-log</strong> — trilha de auditoria do painel WordPress — da spec à produção.",
+    "proofTitle": "Do kit à entrega real",
+    "proofLead": "O <strong>eon-activity-log</strong> foi uma task real desenvolvida com o kit de engenharia com IA, seguindo o fluxo de especificação, implementação e validação. Um exemplo concreto de como aplico o método no desenvolvimento do dia a dia.",
     "proof": [
       {
         "when": "spec 001 · out/2026",
@@ -318,7 +319,7 @@
       {
         "when": "v1.2.0",
         "title": "Verificado com evidência",
-        "text": "Critérios EARS viraram roteiros de verificação com prints do navegador."
+        "text": "Critérios EARS viraram roteiros de verificação com capturas de tela do navegador."
       }
     ],
     "productKicker": "04 — PRODUTO QUE A IA OPERA",

@@ -47,7 +47,7 @@
       { "value": "10+", "label": "corporate sites on the platform I maintain" }
     ],
     "stackKicker": "01 — CORE STACK",
-    "stackTitle": "Full stack for real: from the component to the server.",
+    "stackTitle": "Full stack development, from the frontend to infrastructure.",
     "stack": [
       {
         "area": "FRONT-END",
@@ -203,7 +203,7 @@
         "n": "02",
         "title": "Tools",
         "text": "Kits, commands, and verifiers that take the method into every repository of the team.",
-        "where": "SDD Kit · 8 repositories · WordPress Kit · 5 sites"
+        "where": "13 repositories · 8 on the SDD Kit · 5 sites"
       },
       {
         "n": "03",
@@ -219,7 +219,8 @@
       }
     ],
     "flowKicker": "01 — THE FLOW",
-    "flowTitle": "Spec-Driven Development: nothing is implemented until it has been specified.",
+    "flowTitle": "The flow starts from approved specifications.",
+    "flowLead": "Acceptance criteria tie to the tests, and an independent verifier checks the work before completion.",
     "flowAria": "Flow steps",
     "steps": [
       { "n": "1", "title": "Spec", "text": "PRD and EARS criteria approved by a person" },
@@ -231,20 +232,20 @@
     ],
     "principles": [
       { "title": "Spec before code", "text": "The agent does not decide the scope. A person approves." },
-      { "title": "Acceptance criteria = test", "text": "Each CA-NN becomes a verification script. Nothing is tested outside the spec." },
+      { "title": "Acceptance criteria = test", "text": "Each CA-NN becomes a verification script tied to the spec." },
       { "title": "Whoever writes does not check", "text": "The verifier is not the same agent that implemented." },
       { "title": "Docs stay with the code", "text": "When the two diverge, the agent stops and asks." },
       { "title": "Production has a human owner", "text": "Writes only with a one-time ticket, approved by a person." }
     ],
     "kitsKicker": "02 — THE TEAM AI KITS",
     "kitsTitle": "Two kits that take the method into every repository.",
-    "kitsIntro": "Both kits were born with colleagues at EON. I took on the evolution and the maintenance: today I lead the changes, review the PRs, and bring the new versions to the projects. Together they cover 13 repositories: 8 on the SDD Kit and 5 on the WordPress kit.",
+    "kitsIntro": "Both kits were born with colleagues at EON. I took on the evolution and the maintenance: today I lead the changes, review the PRs, and bring the new versions to the projects. That is 13 repositories covered by the two kits: 8 repositories using the multi-stack SDD Kit and 5 on the WordPress kit.",
     "brought": "WHAT I BROUGHT",
     "sddKicker": "LARAVEL · NEXT.JS",
     "sddTitle": "Multi-stack SDD Kit",
     "sddText": "A portable Spec-Driven Development kit for Claude Code: it organizes the repository by business domains, generates documentation from the code, and guides each new feature through approved specs.",
     "sddMetrics": [
-      { "label": "releases led", "value": "5" },
+      { "label": "versions led", "value": "5" },
       { "label": "repositories using it", "value": "8" },
       { "label": "supported stacks", "value": "3" }
     ],
@@ -288,7 +289,7 @@
         "text": "install-sdd.sh takes the kit and its updates to the client repositories."
       },
       {
-        "title": "Rollout across 5 sites",
+        "title": "Deployment across 5 sites",
         "text": "Votorantim Cimentos, Verdera, Nexa, Quimatic, and CESP working with the same process."
       },
       {
@@ -297,8 +298,8 @@
       }
     ],
     "proofKicker": "03 — THE PROOF",
-    "proofTitle": "A real feature, built entirely through the flow — and in production.",
-    "proofLead": "Plenty of companies have an AI kit. To show the flow in practice, I built the <strong>eon-activity-log</strong> plugin — an audit trail for the WordPress admin — from the spec to production.",
+    "proofTitle": "From the kit to a real delivery",
+    "proofLead": "<strong>eon-activity-log</strong> was a real task built with the engineering-with-AI kit, following the specification, implementation, and validation flow. A concrete example of how I apply the method in day-to-day development.",
     "proof": [
       {
         "when": "spec 001 · Oct/2026",

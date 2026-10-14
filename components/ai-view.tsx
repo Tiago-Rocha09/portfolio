@@ -97,6 +97,9 @@ export async function AiView() {
             {t("flowKicker")}
           </p>
           <h2 className="text-section max-w-[20ch]">{t("flowTitle")}</h2>
+          <p className="mt-7 max-w-[680px] text-[17px] leading-[1.6] text-inverse-body">
+            {t("flowLead")}
+          </p>
           <ol aria-label={t("flowAria")} className="cols-steps mt-14 list-none p-0">
             {steps.map((step) => {
               const emphasis = step.n === "5";
