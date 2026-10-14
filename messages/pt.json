@@ -37,7 +37,7 @@
   "Home": {
     "eyebrow": "Engenheiro de Software Full Stack",
     "title": "Engenheiro full stack.",
-    "lead": "9 anos de mercado, do front-end à infraestrutura — em trabalho remoto desde 2021. Hoje, na EON, desenvolvo para clientes como <strong>Fraport Brasil</strong> e <strong>grupo Votorantim</strong> com React, Next.js, Laravel e Node — e uso IA como processo de engenharia, não como atalho.",
+    "lead": "9 anos de mercado, do front-end à infraestrutura — em trabalho remoto desde 2021. Hoje, na EON, desenvolvo para clientes como <strong>Fraport Brasil</strong> e <strong>Grupo Votorantim</strong> com React, Next.js, Laravel e Node — e uso IA como processo de engenharia, não como atalho.",
     "linkedinCta": "LinkedIn ↗",
     "seeWork": "Ver trabalhos",
     "statsLabel": "Números",
@@ -117,7 +117,7 @@
         "title": "Grupo Votorantim",
         "tag": "CLIENTE EON · PLATAFORMA",
         "img": "[print do site do grupo]",
-        "imgLabel": "Site do grupo Votorantim, com a campanha de 90 anos",
+        "imgLabel": "Site do Grupo Votorantim, com a campanha de 90 anos",
         "image": "/works/votorantim.jpg",
         "imageWidth": 1751,
         "imageHeight": 958,
@@ -170,7 +170,7 @@
         "when": "jun/2021 — hoje",
         "org": "EON",
         "role": "Engenheiro de Software Full Stack",
-        "text": "Fraport Brasil, grupo Votorantim, Auren energia, Nexa Resources, entre outros. Kortex e site da EON. Kits de IA do time. Trabalho remoto desde 2021, de Marabá-PA."
+        "text": "Fraport Brasil, Grupo Votorantim, Auren Energia, Nexa Resources, entre outros. Kortex e site da EON. Kits de IA do time. Trabalho remoto desde 2021, de Marabá-PA."
       },
       {
         "when": "jan/2019 — dez/2023",
@@ -203,7 +203,7 @@
         "n": "02",
         "title": "Ferramentas",
         "text": "Kits, comandos e verificadores que levam o método para cada repositório do time.",
-        "where": "SDD Kit · Kit WordPress · 13 repos"
+        "where": "SDD Kit · 8 repositórios · Kit WordPress · 5 sites"
       },
       {
         "n": "03",
@@ -238,7 +238,7 @@
     ],
     "kitsKicker": "02 — OS KITS DE IA DO TIME",
     "kitsTitle": "Dois kits que levam o método a cada repositório.",
-    "kitsIntro": "Os dois kits nasceram com colegas da EON. Eu assumi a evolução e a manutenção: hoje conduzo as mudanças, reviso os PRs e levo as novas versões para os projetos.",
+    "kitsIntro": "Os dois kits nasceram com colegas da EON. Eu assumi a evolução e a manutenção: hoje conduzo as mudanças, reviso os PRs e levo as novas versões para os projetos. Juntos, cobrem 13 repositórios: 8 no SDD Kit e 5 no kit WordPress.",
     "brought": "O QUE EU TROUXE",
     "sddKicker": "LARAVEL · NEXT.JS",
     "sddTitle": "SDD Kit multi-stack",
@@ -298,7 +298,7 @@
     ],
     "proofKicker": "03 — A PROVA",
     "proofTitle": "Uma feature real, feita inteira pelo fluxo — e em produção.",
-    "proofLead": "Muita empresa tem um kit de IA. Faltava mostrar o kit entregando. O plugin <strong>eon-activity-log</strong> — trilha de auditoria do painel WordPress — foi o primeiro: do PRD à evidência de teste, sem atalho.",
+    "proofLead": "Muita empresa tem um kit de IA. Para mostrar o fluxo na prática, desenvolvi o plugin <strong>eon-activity-log</strong> — trilha de auditoria do painel WordPress — da spec à produção.",
     "proof": [
       {
         "when": "spec 001 · out/2026",
@@ -347,8 +347,8 @@
     ],
     "guardKicker": "05 — GUARDRAILS",
     "guardTitle": "Uma trava que o agente abre não é trava.",
-    "guardP1": "Um hook que roda antes de qualquer comando do agente — inclusive no modo sem permissões. Leitura em produção passa livre. Escrita, ou leitura de credencial, exige um ticket de uso único aprovado por uma pessoa e casado pelo hash do comando exato. O agente não consegue emitir o ticket nem editar a trava.",
-    "guardP2": "Junto dele, um wrapper de wp-cli para todos os ambientes que impede recriar containers por engano e bloqueia operações destrutivas.",
+    "guardP1": "Um hook que roda antes de qualquer comando do agente. Leitura em produção passa livre. Escrita exige um ticket de uso único, aprovado por uma pessoa. O agente não consegue emitir o ticket nem editar a trava.",
+    "guardP2": "Operações destrutivas no ambiente também ficam bloqueadas até uma pessoa autorizar.",
     "readPrompt": "agente $",
     "readCommand": "docker logs app --tail 50",
     "readOk": "✓ leitura — liberado",
@@ -356,10 +356,10 @@
     "writeCommand": "docker restart app",
     "writeBad": "✕ escrita em produção — bloqueado, pedido registrado",
     "humanPrompt": "humano $",
-    "humanCommand": "prod-ok",
-    "ticketOk": "✓ ticket de uso único · sha256 do comando · 10 min",
+    "humanCommand": "aprova a escrita",
+    "ticketOk": "✓ ticket de uso único",
     "agentPrompt": "agente $",
-    "agentCommand": "prod-ok",
+    "agentCommand": "aprova a escrita",
     "agentBad": "✕ só uma pessoa aprova",
     "caption": "Ilustração do fluxo de aprovação. Bash + hooks do Claude Code."
   }

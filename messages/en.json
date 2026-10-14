@@ -37,7 +37,7 @@
   "Home": {
     "eyebrow": "Full Stack Software Engineer",
     "title": "Full stack engineer.",
-    "lead": "9 years in the market, from the front end to infrastructure — working remotely since 2021. Today, at EON, I develop for clients such as <strong>Fraport Brasil</strong> and the <strong>Votorantim group</strong> with React, Next.js, Laravel, and Node — and I use AI as an engineering process, not as a shortcut.",
+    "lead": "9 years in the market, from the front end to infrastructure — working remotely since 2021. Today, at EON, I develop for clients such as <strong>Fraport Brasil</strong> and <strong>Grupo Votorantim</strong> with React, Next.js, Laravel, and Node — and I use AI as an engineering process, not as a shortcut.",
     "linkedinCta": "LinkedIn ↗",
     "seeWork": "See the work",
     "statsLabel": "Numbers",
@@ -117,7 +117,7 @@
         "title": "Grupo Votorantim",
         "tag": "EON CLIENT · PLATFORM",
         "img": "[group site screenshot]",
-        "imgLabel": "Votorantim group website, with the 90-year campaign",
+        "imgLabel": "Grupo Votorantim website, with the 90-year campaign",
         "image": "/works/votorantim.jpg",
         "imageWidth": 1751,
         "imageHeight": 958,
@@ -170,7 +170,7 @@
         "when": "Jun 2021 — today",
         "org": "EON",
         "role": "Full Stack Software Engineer",
-        "text": "Fraport Brasil, the Votorantim group, Auren Energia, Nexa Resources, among others. Kortex and the EON site. The team AI kits. Remote work since 2021, from Marabá-PA."
+        "text": "Fraport Brasil, Grupo Votorantim, Auren Energia, Nexa Resources, among others. Kortex and the EON site. The team AI kits. Remote work since 2021, from Marabá-PA."
       },
       {
         "when": "Jan 2019 — Dec 2023",
@@ -203,7 +203,7 @@
         "n": "02",
         "title": "Tools",
         "text": "Kits, commands, and verifiers that take the method into every repository of the team.",
-        "where": "SDD Kit · WordPress Kit · 13 repos"
+        "where": "SDD Kit · 8 repositories · WordPress Kit · 5 sites"
       },
       {
         "n": "03",
@@ -238,7 +238,7 @@
     ],
     "kitsKicker": "02 — THE TEAM AI KITS",
     "kitsTitle": "Two kits that take the method into every repository.",
-    "kitsIntro": "Both kits were born with colleagues at EON. I took on the evolution and the maintenance: today I lead the changes, review the PRs, and bring the new versions to the projects.",
+    "kitsIntro": "Both kits were born with colleagues at EON. I took on the evolution and the maintenance: today I lead the changes, review the PRs, and bring the new versions to the projects. Together they cover 13 repositories: 8 on the SDD Kit and 5 on the WordPress kit.",
     "brought": "WHAT I BROUGHT",
     "sddKicker": "LARAVEL · NEXT.JS",
     "sddTitle": "Multi-stack SDD Kit",
@@ -298,7 +298,7 @@
     ],
     "proofKicker": "03 — THE PROOF",
     "proofTitle": "A real feature, built entirely through the flow — and in production.",
-    "proofLead": "Plenty of companies have an AI kit. What was missing was showing the kit delivering. The <strong>eon-activity-log</strong> plugin — an audit trail for the WordPress admin — was the first: from the PRD to the test evidence, with no shortcut.",
+    "proofLead": "Plenty of companies have an AI kit. To show the flow in practice, I built the <strong>eon-activity-log</strong> plugin — an audit trail for the WordPress admin — from the spec to production.",
     "proof": [
       {
         "when": "spec 001 · Oct/2026",
@@ -347,8 +347,8 @@
     ],
     "guardKicker": "05 — GUARDRAILS",
     "guardTitle": "A lock the agent can open is not a lock.",
-    "guardP1": "A hook that runs before any command from the agent — including in permissionless mode. Reads in production go through. A write, or reading a credential, requires a one-time ticket approved by a person and matched by the hash of the exact command. The agent cannot issue the ticket or edit the lock.",
-    "guardP2": "Alongside it, a wp-cli wrapper for every environment that stops containers from being recreated by mistake and blocks destructive operations.",
+    "guardP1": "A hook that runs before any command from the agent. Reads in production go through. A write requires a one-time ticket approved by a person. The agent cannot issue the ticket or edit the lock.",
+    "guardP2": "Destructive operations in the environment also stay blocked until a person authorizes them.",
     "readPrompt": "agent $",
     "readCommand": "docker logs app --tail 50",
     "readOk": "✓ read — allowed",
@@ -356,10 +356,10 @@
     "writeCommand": "docker restart app",
     "writeBad": "✕ production write — blocked, request logged",
     "humanPrompt": "human $",
-    "humanCommand": "prod-ok",
-    "ticketOk": "✓ one-time ticket · command sha256 · 10 min",
+    "humanCommand": "approve the write",
+    "ticketOk": "✓ one-time ticket",
     "agentPrompt": "agent $",
-    "agentCommand": "prod-ok",
+    "agentCommand": "approve the write",
     "agentBad": "✕ only a person approves",
     "caption": "Illustration of the approval flow. Bash + Claude Code hooks."
   }
