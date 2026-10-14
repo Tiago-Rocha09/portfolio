@@ -47,7 +47,7 @@
       { "value": "10+", "label": "corporate sites on the platform I maintain" }
     ],
     "stackKicker": "01 — CORE STACK",
-    "stackTitle": "Full stack development, from the frontend to infrastructure.",
+    "stackTitle": "Full stack development, from the front end to infrastructure.",
     "stack": [
       {
         "area": "FRONT-END",
@@ -126,7 +126,7 @@
         "points": [
           "Lead developer of the group's sites",
           "Scoped deploys, without taking the site down on routine updates",
-          "Incident response: root cause, fix, and post-mortem"
+          "Incident investigation and resolution, with root-cause analysis and a recorded post-mortem"
         ],
         "stack": "WordPress · PHP 8 · ACF · Docker · AWS · Cloudflare"
       },
@@ -142,7 +142,7 @@
         "points": [
           "MCP server with 20 tools: AI agents edit and publish pages",
           "Live preview, scheduled publishing, and automatic translation",
-          "End-to-end OpenTelemetry; API memory from ~402 to ~143 MiB"
+          "End-to-end OpenTelemetry; reduced API memory use from approximately 402 MiB to 143 MiB"
         ],
         "stack": "Laravel 12 · Next.js 16 · Node 22 · MySQL · Redis · AWS KMS"
       },
@@ -251,12 +251,12 @@
     ],
     "sddkit": [
       {
-        "title": "From Laravel-only to multi-stack",
+        "title": "From Laravel to multiple stacks",
         "text": "A stack profile system (Laravel, Next.js App Router and Pages) with automatic detection of stack and archetype, without duplicating the methodology."
       },
       {
         "title": "/dev:build-cms-section-front",
-        "text": "Generates CMS sections on the front end with pixel-perfect fidelity to Figma, checked by a harness in the browser."
+        "text": "Generates CMS sections on the front end from Figma and checks the visual result in the browser."
       },
       {
         "title": "/dev:build-cms-section-json",
@@ -273,7 +273,7 @@
     ],
     "wpKicker": "WORDPRESS",
     "wpTitle": "SDD kit for the WordPress template",
-    "wpText": "It specializes the agent in the EON way of building WordPress — constitution, doctrine by site archetype, hardening — and it reaches each client site from the template.",
+    "wpText": "It specializes the agent in the EON way of building WordPress: it defines development standards, rules specific to each site type, and security controls. It reaches each client site from the template.",
     "commands": [
       { "text": "/eon-new → /eon-prd → /eon-spec", "muted": false },
       { "text": "→ /eon-domain → /eon-plan → /eon-tasks", "muted": false },
@@ -330,7 +330,7 @@
         "title": "20 tools for agents to edit the CMS",
         "text": "Claude and Cursor create, edit, schedule, and publish pages and adjust SEO directly in the CMS.",
         "points": [
-          "The backend is the OAuth server: the agent signs in with the permission of whoever authorized it",
+          "The MCP server uses OAuth to authorize the agent with the permissions of the user who granted access",
           "Every change made by AI is marked in the history and in the audit"
         ],
         "stack": "TypeScript · MCP SDK · Express 5 · Drizzle · Zod"
@@ -348,7 +348,7 @@
     ],
     "guardKicker": "05 — GUARDRAILS",
     "guardTitle": "A lock the agent can open is not a lock.",
-    "guardP1": "A hook that runs before any command from the agent. Reads in production go through. A write requires a one-time ticket approved by a person. The agent cannot issue the ticket or edit the lock.",
+    "guardP1": "A Claude Code hook that inspects shell commands and file edits before they run. In production, simple reads go through; writes and credential reads require a one-time ticket approved by a person. Commands that do not reach production are not blocked. The agent cannot issue the ticket or edit the lock.",
     "guardP2": "Destructive operations in the environment also stay blocked until a person authorizes them.",
     "readPrompt": "agent $",
     "readCommand": "docker logs app --tail 50",

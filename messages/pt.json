@@ -47,7 +47,7 @@
       { "value": "10+", "label": "sites corporativos na plataforma que mantenho" }
     ],
     "stackKicker": "01 — STACK PRINCIPAL",
-    "stackTitle": "Desenvolvimento full stack, do frontend à infraestrutura.",
+    "stackTitle": "Desenvolvimento full stack, do front-end à infraestrutura.",
     "stack": [
       {
         "area": "FRONT-END",
@@ -105,7 +105,7 @@
         "imageWidth": 1355,
         "imageHeight": 960,
         "href": "https://portoalegre-airport.com.br/pt",
-        "text": "CMS e sites multi-idioma dos aeroportos da Fraport Brasil. Sou o desenvolvedor principal desde o início do projeto.",
+        "text": "CMS e sites multilíngues dos aeroportos da Fraport Brasil. Sou o desenvolvedor principal desde o início do projeto.",
         "points": [
           "Painel de voos nos sites dos aeroportos",
           "Mapas interativos dos terminais e tradução automática",
@@ -126,7 +126,7 @@
         "points": [
           "Principal desenvolvedor dos sites do grupo",
           "Deploy por escopo, sem derrubar o site em atualizações de rotina",
-          "Resposta a incidente: causa raiz, correção e post-mortem"
+          "Investigação e resolução de incidentes, com análise de causa raiz e registro do post-mortem"
         ],
         "stack": "WordPress · PHP 8 · ACF · Docker · AWS · Cloudflare"
       },
@@ -142,7 +142,7 @@
         "points": [
           "Servidor MCP com 20 ferramentas: agentes de IA editam e publicam páginas",
           "Preview ao vivo, publicação agendada e tradução automática",
-          "OpenTelemetry ponta a ponta; memória da API de ~402 para ~143 MiB"
+          "OpenTelemetry ponta a ponta; redução do consumo de memória da API de aproximadamente 402 MiB para 143 MiB"
         ],
         "stack": "Laravel 12 · Next.js 16 · Node 22 · MySQL · Redis · AWS KMS"
       },
@@ -251,12 +251,12 @@
     ],
     "sddkit": [
       {
-        "title": "De só-Laravel para multi-stack",
+        "title": "De Laravel para múltiplas stacks",
         "text": "Sistema de stack profiles (Laravel, Next.js App Router e Pages) com detecção automática de stack e de arquétipo, sem duplicar a metodologia."
       },
       {
         "title": "/dev:build-cms-section-front",
-        "text": "Gera seções do CMS no front com fidelidade pixel a pixel ao Figma, conferidas por um harness no navegador."
+        "text": "Gera seções do CMS no front-end a partir do Figma e verifica o resultado visual no navegador."
       },
       {
         "title": "/dev:build-cms-section-json",
@@ -273,7 +273,7 @@
     ],
     "wpKicker": "WORDPRESS",
     "wpTitle": "Kit SDD do template WordPress",
-    "wpText": "Especializa o agente no jeito EON de fazer WordPress — constituição, doutrina por arquétipo de site, hardening — e chega a cada site de cliente a partir do template.",
+    "wpText": "Especializa o agente no jeito EON de fazer WordPress: define padrões de desenvolvimento, regras específicas para cada tipo de site e controles de segurança. Chega a cada site de cliente a partir do template.",
     "commands": [
       { "text": "/eon-new → /eon-prd → /eon-spec", "muted": false },
       { "text": "→ /eon-domain → /eon-plan → /eon-tasks", "muted": false },
@@ -330,7 +330,7 @@
         "title": "20 ferramentas para agentes editarem o CMS",
         "text": "Claude e Cursor criam, editam, agendam e publicam páginas e ajustam SEO direto no CMS.",
         "points": [
-          "O backend é o servidor OAuth: o agente entra com a permissão de quem autorizou",
+          "O servidor MCP utiliza OAuth para autorizar o agente com as permissões do usuário que concedeu acesso",
           "Toda alteração feita por IA fica marcada no histórico e na auditoria"
         ],
         "stack": "TypeScript · MCP SDK · Express 5 · Drizzle · Zod"
@@ -348,7 +348,7 @@
     ],
     "guardKicker": "05 — GUARDRAILS",
     "guardTitle": "Uma trava que o agente abre não é trava.",
-    "guardP1": "Um hook que roda antes de qualquer comando do agente. Leitura em produção passa livre. Escrita exige um ticket de uso único, aprovado por uma pessoa. O agente não consegue emitir o ticket nem editar a trava.",
+    "guardP1": "Um hook do Claude Code que inspeciona comandos de shell e edições de arquivo antes de executarem. Em produção, leitura simples passa livre; escrita e leitura de credenciais exigem um ticket de uso único, aprovado por uma pessoa. Comandos que não alcançam produção seguem sem esse bloqueio. O agente não consegue emitir o ticket nem editar a trava.",
     "guardP2": "Operações destrutivas no ambiente também ficam bloqueadas até uma pessoa autorizar.",
     "readPrompt": "agente $",
     "readCommand": "docker logs app --tail 50",
