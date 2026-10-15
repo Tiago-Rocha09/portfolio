@@ -28,23 +28,23 @@
     "footer": {
       "kicker": "WHERE TO FIND ME",
       "linkedin": "LinkedIn",
+      "email": "Email",
       "copy": "© 2026 Tiago Rocha · Marabá-PA, Brazil",
-      "github": "GitHub",
       "ai": "Engineering with AI",
       "home": "Home"
     }
   },
   "Home": {
     "eyebrow": "Full Stack Software Engineer",
-    "title": "Full stack engineer.",
-    "lead": "9 years in the market, from the front end to infrastructure — working remotely since 2021. Today, at EON, I develop for clients such as <strong>Fraport Brasil</strong> and <strong>Grupo Votorantim</strong> with React, Next.js, Laravel, and Node — and I use AI as an engineering process, not as a shortcut.",
+    "title": "From the front end to infrastructure.",
+    "lead": "9 years in the market, working remotely since 2021. Today, at EON, I develop for clients such as <strong>Fraport Brasil</strong> and <strong>Votorantim Cimentos</strong> with React, Next.js, Laravel, and Node — and I use AI as an engineering process, not as a shortcut.",
     "linkedinCta": "LinkedIn ↗",
     "seeWork": "See the work",
     "statsLabel": "Numbers",
     "stats": [
       { "value": "9 years", "label": "in the market, since 2017" },
       { "value": "5 years", "label": "of remote work, since 2021" },
-      { "value": "10+", "label": "corporate sites on the platform I maintain" }
+      { "value": "10+", "label": "corporate sites on EON's WordPress platform" }
     ],
     "stackKicker": "01 — CORE STACK",
     "stackTitle": "Full stack development, from the front end to infrastructure.",
@@ -89,7 +89,7 @@
       },
       {
         "title": "Production guardrails",
-        "text": "Server writes only with one-time human approval."
+        "text": "Server writes only with a one-time ticket approved by a person."
       }
     ],
     "workKicker": "03 — MAIN WORK",
@@ -114,18 +114,18 @@
         "stack": "Laravel · Next.js · React · Redis · Docker · AWS ECS"
       },
       {
-        "title": "Grupo Votorantim",
+        "title": "Votorantim Cimentos",
         "tag": "EON CLIENT · PLATFORM",
-        "img": "[group site screenshot]",
-        "imgLabel": "Grupo Votorantim website, with the 90-year campaign",
+        "img": "[Votorantim Cimentos site screenshot]",
+        "imgLabel": "Votorantim Cimentos website, with the 90-year campaign",
         "image": "/works/votorantim.jpg",
         "imageWidth": 1751,
         "imageHeight": 958,
         "href": "https://www.votorantimcimentos.com/",
-        "text": "Sites for the group, on EON's corporate WordPress platform.",
+        "text": "Votorantim Cimentos sites on EON's corporate WordPress platform.",
         "points": [
-          "Lead developer of the group's sites",
-          "Scoped deploys, without taking the site down on routine updates",
+          "Lead developer of the company's sites",
+          "Scoped deploys, with routine updates and no downtime",
           "Incident investigation and resolution, with root-cause analysis and a recorded post-mortem"
         ],
         "stack": "WordPress · PHP 8 · ACF · Docker · AWS · Cloudflare"
@@ -142,7 +142,7 @@
         "points": [
           "MCP server with 20 tools: AI agents edit and publish pages",
           "Live preview, scheduled publishing, and automatic translation",
-          "End-to-end OpenTelemetry; reduced API memory use from approximately 402 MiB to 143 MiB"
+          "Per-client observability: traces, logs, and Grafana dashboards with OpenTelemetry"
         ],
         "stack": "Laravel 12 · Next.js 16 · Node 22 · MySQL · Redis · AWS KMS"
       },
@@ -167,22 +167,34 @@
     "experienceKicker": "04 — EXPERIENCE",
     "experience": [
       {
-        "when": "Jun 2021 — today",
+        "when": "Jul 2025 — today",
         "org": "EON",
         "role": "Full Stack Software Engineer",
-        "text": "Fraport Brasil, Grupo Votorantim, Auren Energia, Nexa Resources, among others. Kortex and the EON site. The team AI kits. Remote work since 2021, from Marabá-PA."
+        "text": "Corporate clients in sectors such as aviation, cement, mining, and energy. Kortex and the EON site. The team AI kits. Remote, from Marabá-PA."
+      },
+      {
+        "when": "Jun 2021 — Jun 2025",
+        "org": "Multti",
+        "role": "Full Stack Developer",
+        "text": "Sites and CMS for the airports of Fraport Brasil, an online exam-prep course platform, and financial integrations (direct debit and bank connections), with React, Next.js, and Laravel. Part-time until Dec 2023, remote."
       },
       {
         "when": "Jan 2019 — Dec 2023",
         "org": "Ctech",
         "role": "Full Stack Developer",
-        "text": "Sites and management systems, Node APIs, mobile apps, and ERP integrations with messaging systems."
+        "text": "Sites and management systems, Node APIs, and ERP integrations with messaging systems. For a retail chain client, a BI system, a React Native sales app integrated with the ERP, and campaign landing pages."
+      },
+      {
+        "when": "Nov 2017 — Dec 2018",
+        "org": "Bits Jr. Soluções em TI",
+        "role": "Full Stack Developer",
+        "text": "Web applications and corporate systems in PHP and JavaScript; mobile apps in React Native."
       },
       {
         "when": "Education",
         "org": "UNIFESSPA",
         "role": "Computer Engineering",
-        "text": "Federal University of the South and Southeast of Pará."
+        "text": "Federal University of the South and Southeast of Pará. 2014 — 2019, completed."
       }
     ]
   },
@@ -197,7 +209,7 @@
         "n": "01",
         "title": "Methodology",
         "text": "Specs approved by humans before the code, acceptance criteria that become tests, documentation that stays with the code.",
-        "where": "Spec-Driven Development · EARS"
+        "where": "Spec-Driven Development · EARS (structured-language requirements)"
       },
       {
         "n": "02",
@@ -215,7 +227,7 @@
         "n": "04",
         "title": "Guardrails",
         "text": "Locks that keep agents away from unapproved changes in production.",
-        "where": "Hooks · one-time human ticket"
+        "where": "Hooks · one-time ticket approved by a person"
       }
     ],
     "flowKicker": "01 — THE FLOW",
@@ -232,7 +244,7 @@
     ],
     "principles": [
       { "title": "Spec before code", "text": "The agent does not decide the scope. A person approves." },
-      { "title": "Acceptance criteria = test", "text": "Each CA-NN becomes a verification script tied to the spec." },
+      { "title": "Acceptance criteria = test", "text": "Each acceptance criterion becomes a verification script tied to the spec." },
       { "title": "Whoever writes does not check", "text": "The verifier is not the same agent that implemented." },
       { "title": "Docs stay with the code", "text": "When the two diverge, the agent stops and asks." },
       { "title": "Production has a human owner", "text": "Writes only with a one-time ticket, approved by a person." }
@@ -247,7 +259,7 @@
     "sddMetrics": [
       { "label": "versions led", "value": "5" },
       { "label": "repositories using it", "value": "8" },
-      { "label": "supported stacks", "value": "3" }
+      { "label": "stack profiles", "value": "3" }
     ],
     "sddkit": [
       {
@@ -255,15 +267,15 @@
         "text": "A stack profile system (Laravel, Next.js App Router and Pages) with automatic detection of stack and archetype, without duplicating the methodology."
       },
       {
-        "title": "/dev:build-cms-section-front",
+        "title": "CMS sections from Figma",
         "text": "Generates CMS sections on the front end from Figma and checks the visual result in the browser."
       },
       {
-        "title": "/dev:build-cms-section-json",
+        "title": "CMS section blueprint",
         "text": "A section blueprint with a props contract, writing in stages, and an independent verifier."
       },
       {
-        "title": "doc-sync rule + /dev:quick-fix",
+        "title": "Docs and code in sync",
         "text": "On small fixes, the agent detects a divergence between the docs and the code and asks before going on."
       },
       {
@@ -275,9 +287,9 @@
     "wpTitle": "SDD kit for the WordPress template",
     "wpText": "It specializes the agent in the EON way of building WordPress: it defines development standards, rules specific to each site type, and security controls. It reaches each client site from the template.",
     "commands": [
-      { "text": "/eon-new → /eon-prd → /eon-spec", "muted": false },
-      { "text": "→ /eon-domain → /eon-plan → /eon-tasks", "muted": false },
-      { "text": "/eon-reverse · baseline for existing projects", "muted": true }
+      { "text": "project → PRD → spec", "muted": false },
+      { "text": "→ domain → plan → tasks", "muted": false },
+      { "text": "reverse engineering · baseline for existing projects", "muted": true }
     ],
     "wpkit": [
       {
@@ -286,11 +298,11 @@
       },
       {
         "title": "Installer and updater",
-        "text": "install-sdd.sh takes the kit and its updates to the client repositories."
+        "text": "An install script takes the kit and its updates to the client repositories."
       },
       {
         "title": "Deployment across 5 sites",
-        "text": "Votorantim Cimentos, Verdera, Nexa, Quimatic, and CESP working with the same process."
+        "text": "Client sites across different sectors working with the same process."
       },
       {
         "title": "First feature through the flow",
@@ -304,7 +316,7 @@
       {
         "when": "spec 001 · Oct/2026",
         "title": "PRD → tasks",
-        "text": "Access, users, content, media, plugins, and deploy logged as “System”."
+        "text": "Admin activity log: sign-ins and changes to users, content, media, and plugins, with deploys identified as system actions."
       },
       {
         "when": "v1.0 → v1.1",
@@ -314,7 +326,7 @@
       {
         "when": "spec 002 · Oct/2026",
         "title": "Second pass",
-        "text": "Customize, menus, 65 configuration options, and a before/after screen."
+        "text": "Coverage extended to the theme Customizer, menus, and 65 configuration options, with a before/after comparison screen."
       },
       {
         "when": "v1.2.0",
@@ -348,7 +360,7 @@
     ],
     "guardKicker": "05 — GUARDRAILS",
     "guardTitle": "A lock the agent can open is not a lock.",
-    "guardP1": "A Claude Code hook that inspects shell commands and file edits before they run. In production, simple reads go through; writes and credential reads require a one-time ticket approved by a person. Commands that do not reach production are not blocked. The agent cannot issue the ticket or edit the lock.",
+    "guardP1": "A Claude Code hook that inspects shell commands and file edits before they run. In production, simple reads go through; writes and credential reads require a one-time ticket approved by a person. The agent cannot issue the ticket or edit the lock.",
     "guardP2": "Destructive operations in the environment also stay blocked until a person authorizes them.",
     "readPrompt": "agent $",
     "readCommand": "docker logs app --tail 50",

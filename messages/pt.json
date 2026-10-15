@@ -28,23 +28,23 @@
     "footer": {
       "kicker": "ONDE ME ENCONTRAR",
       "linkedin": "LinkedIn",
+      "email": "E-mail",
       "copy": "© 2026 Tiago Rocha · Marabá-PA, Brasil",
-      "github": "GitHub",
       "ai": "Engenharia com IA",
       "home": "Home"
     }
   },
   "Home": {
     "eyebrow": "Engenheiro de Software Full Stack",
-    "title": "Engenheiro full stack.",
-    "lead": "9 anos de mercado, do front-end à infraestrutura — em trabalho remoto desde 2021. Hoje, na EON, desenvolvo para clientes como <strong>Fraport Brasil</strong> e <strong>Grupo Votorantim</strong> com React, Next.js, Laravel e Node — e uso IA como processo de engenharia, não como atalho.",
+    "title": "Do front-end à infraestrutura.",
+    "lead": "9 anos de mercado, em trabalho remoto desde 2021. Hoje, na EON, desenvolvo para clientes como <strong>Fraport Brasil</strong> e <strong>Votorantim Cimentos</strong> com React, Next.js, Laravel e Node — e uso IA como processo de engenharia, não como atalho.",
     "linkedinCta": "LinkedIn ↗",
     "seeWork": "Ver trabalhos",
     "statsLabel": "Números",
     "stats": [
       { "value": "9 anos", "label": "de mercado, desde 2017" },
       { "value": "5 anos", "label": "de trabalho remoto, desde 2021" },
-      { "value": "10+", "label": "sites corporativos na plataforma que mantenho" }
+      { "value": "10+", "label": "sites corporativos na plataforma WordPress da EON" }
     ],
     "stackKicker": "01 — STACK PRINCIPAL",
     "stackTitle": "Desenvolvimento full stack, do front-end à infraestrutura.",
@@ -89,7 +89,7 @@
       },
       {
         "title": "Guardrails de produção",
-        "text": "Escrita em servidor só com aprovação humana de uso único."
+        "text": "Escrita em servidor só com ticket de uso único aprovado por uma pessoa."
       }
     ],
     "workKicker": "03 — TRABALHOS PRINCIPAIS",
@@ -114,18 +114,18 @@
         "stack": "Laravel · Next.js · React · Redis · Docker · AWS ECS"
       },
       {
-        "title": "Grupo Votorantim",
+        "title": "Votorantim Cimentos",
         "tag": "CLIENTE EON · PLATAFORMA",
-        "img": "[print do site do grupo]",
-        "imgLabel": "Site do Grupo Votorantim, com a campanha de 90 anos",
+        "img": "[print do site da Votorantim Cimentos]",
+        "imgLabel": "Site da Votorantim Cimentos, com a campanha de 90 anos",
         "image": "/works/votorantim.jpg",
         "imageWidth": 1751,
         "imageHeight": 958,
         "href": "https://www.votorantimcimentos.com/",
-        "text": "Sites do grupo na plataforma WordPress corporativa da EON.",
+        "text": "Sites da Votorantim Cimentos na plataforma WordPress corporativa da EON.",
         "points": [
-          "Principal desenvolvedor dos sites do grupo",
-          "Deploy por escopo, sem derrubar o site em atualizações de rotina",
+          "Principal desenvolvedor dos sites da empresa",
+          "Deploy por escopo, com atualizações de rotina sem indisponibilidade",
           "Investigação e resolução de incidentes, com análise de causa raiz e registro do post-mortem"
         ],
         "stack": "WordPress · PHP 8 · ACF · Docker · AWS · Cloudflare"
@@ -142,7 +142,7 @@
         "points": [
           "Servidor MCP com 20 ferramentas: agentes de IA editam e publicam páginas",
           "Preview ao vivo, publicação agendada e tradução automática",
-          "OpenTelemetry ponta a ponta; redução do consumo de memória da API de aproximadamente 402 MiB para 143 MiB"
+          "Observabilidade por cliente: traces, logs e painéis no Grafana com OpenTelemetry"
         ],
         "stack": "Laravel 12 · Next.js 16 · Node 22 · MySQL · Redis · AWS KMS"
       },
@@ -167,22 +167,34 @@
     "experienceKicker": "04 — EXPERIÊNCIA",
     "experience": [
       {
-        "when": "jun/2021 — hoje",
+        "when": "jul/2025 — hoje",
         "org": "EON",
         "role": "Engenheiro de Software Full Stack",
-        "text": "Fraport Brasil, Grupo Votorantim, Auren Energia, Nexa Resources, entre outros. Kortex e site da EON. Kits de IA do time. Trabalho remoto desde 2021, de Marabá-PA."
+        "text": "Clientes corporativos de setores como aviação, cimento, mineração e energia. Kortex e site da EON. Kits de IA do time. Remoto, de Marabá-PA."
+      },
+      {
+        "when": "jun/2021 — jun/2025",
+        "org": "Multti",
+        "role": "Desenvolvedor Full Stack",
+        "text": "Sites e CMS dos aeroportos da Fraport Brasil, plataforma de cursos preparatórios online e integrações financeiras (DDA e conexão bancária), com React, Next.js e Laravel. Meio período até dez/2023, remoto."
       },
       {
         "when": "jan/2019 — dez/2023",
         "org": "Ctech",
         "role": "Desenvolvedor Full Stack",
-        "text": "Sites e sistemas de gestão, APIs em Node, apps mobile e integrações de ERPs com sistemas de envio de mensagens."
+        "text": "Sites e sistemas de gestão, APIs em Node e integrações de ERPs com sistemas de envio de mensagens. Para uma rede de lojas cliente, sistema de BI, app de vendas em React Native integrado ao ERP e landing pages de campanha."
+      },
+      {
+        "when": "nov/2017 — dez/2018",
+        "org": "Bits Jr. Soluções em TI",
+        "role": "Desenvolvedor Full Stack",
+        "text": "Aplicações web e sistemas corporativos em PHP e JavaScript; apps mobile em React Native."
       },
       {
         "when": "Formação",
         "org": "UNIFESSPA",
         "role": "Engenharia da Computação",
-        "text": "Universidade Federal do Sul e Sudeste do Pará."
+        "text": "Universidade Federal do Sul e Sudeste do Pará. 2014 — 2019, concluída."
       }
     ]
   },
@@ -197,7 +209,7 @@
         "n": "01",
         "title": "Metodologia",
         "text": "Specs aprovadas por humanos antes do código, critérios de aceite que viram testes, documentação que acompanha o código.",
-        "where": "Spec-Driven Development · EARS"
+        "where": "Spec-Driven Development · EARS (requisitos em linguagem estruturada)"
       },
       {
         "n": "02",
@@ -215,7 +227,7 @@
         "n": "04",
         "title": "Guardrails",
         "text": "Travas que mantêm agentes longe de mudanças não aprovadas em produção.",
-        "where": "Hooks · ticket humano de uso único"
+        "where": "Hooks · ticket de uso único aprovado por uma pessoa"
       }
     ],
     "flowKicker": "01 — O FLUXO",
@@ -232,7 +244,7 @@
     ],
     "principles": [
       { "title": "Spec antes do código", "text": "O agente não decide o escopo. Uma pessoa aprova." },
-      { "title": "Critério de aceite = teste", "text": "Cada CA-NN vira um roteiro de verificação ligado à spec." },
+      { "title": "Critério de aceite = teste", "text": "Cada critério de aceite vira um roteiro de verificação ligado à spec." },
       { "title": "Quem escreve não confere", "text": "O verificador não é o mesmo agente que implementou." },
       { "title": "Doc acompanha código", "text": "Quando os dois divergem, o agente para e pergunta." },
       { "title": "Produção tem dono humano", "text": "Escrita só com ticket de uso único, aprovado por uma pessoa." }
@@ -247,7 +259,7 @@
     "sddMetrics": [
       { "label": "versões conduzidas", "value": "5" },
       { "label": "repositórios usando", "value": "8" },
-      { "label": "stacks suportadas", "value": "3" }
+      { "label": "perfis de stack", "value": "3" }
     ],
     "sddkit": [
       {
@@ -255,15 +267,15 @@
         "text": "Sistema de stack profiles (Laravel, Next.js App Router e Pages) com detecção automática de stack e de arquétipo, sem duplicar a metodologia."
       },
       {
-        "title": "/dev:build-cms-section-front",
+        "title": "Seções do CMS a partir do Figma",
         "text": "Gera seções do CMS no front-end a partir do Figma e verifica o resultado visual no navegador."
       },
       {
-        "title": "/dev:build-cms-section-json",
+        "title": "Blueprint de seções do CMS",
         "text": "Blueprint de seções com contrato de props, escrita em etapas e verificador independente."
       },
       {
-        "title": "Regra doc-sync + /dev:quick-fix",
+        "title": "Doc e código em sincronia",
         "text": "Em ajustes pontuais, o agente detecta divergência entre doc e código e pergunta antes de seguir."
       },
       {
@@ -275,9 +287,9 @@
     "wpTitle": "Kit SDD do template WordPress",
     "wpText": "Especializa o agente no jeito EON de fazer WordPress: define padrões de desenvolvimento, regras específicas para cada tipo de site e controles de segurança. Chega a cada site de cliente a partir do template.",
     "commands": [
-      { "text": "/eon-new → /eon-prd → /eon-spec", "muted": false },
-      { "text": "→ /eon-domain → /eon-plan → /eon-tasks", "muted": false },
-      { "text": "/eon-reverse · baseline de projetos existentes", "muted": true }
+      { "text": "projeto → PRD → spec", "muted": false },
+      { "text": "→ domínio → plano → tarefas", "muted": false },
+      { "text": "engenharia reversa · baseline de projetos existentes", "muted": true }
     ],
     "wpkit": [
       {
@@ -286,11 +298,11 @@
       },
       {
         "title": "Instalador e atualizador",
-        "text": "install-sdd.sh leva o kit e suas atualizações para os repositórios dos clientes."
+        "text": "Um script de instalação leva o kit e suas atualizações para os repositórios dos clientes."
       },
       {
         "title": "Implantação em 5 sites",
-        "text": "Votorantim Cimentos, Verdera, Nexa, Quimatic e CESP trabalhando com o mesmo processo."
+        "text": "Sites de clientes de diferentes setores trabalhando com o mesmo processo."
       },
       {
         "title": "Primeira feature pelo fluxo",
@@ -304,7 +316,7 @@
       {
         "when": "spec 001 · out/2026",
         "title": "PRD → tarefas",
-        "text": "Log de acesso, usuários, conteúdo, mídia, plugins e deploy registrado como “Sistema”."
+        "text": "Registro de atividades do painel: acessos, alterações em usuários, conteúdo, mídia e plugins, com deploys identificados como ações do sistema."
       },
       {
         "when": "v1.0 → v1.1",
@@ -314,7 +326,7 @@
       {
         "when": "spec 002 · out/2026",
         "title": "Segunda volta",
-        "text": "Personalizar, menus, 65 opções de configuração e tela com antes/depois."
+        "text": "Cobertura ampliada para o Personalizador do tema, menus e 65 opções de configuração, com tela de comparação antes/depois."
       },
       {
         "when": "v1.2.0",
@@ -348,7 +360,7 @@
     ],
     "guardKicker": "05 — GUARDRAILS",
     "guardTitle": "Uma trava que o agente abre não é trava.",
-    "guardP1": "Um hook do Claude Code que inspeciona comandos de shell e edições de arquivo antes de executarem. Em produção, leitura simples passa livre; escrita e leitura de credenciais exigem um ticket de uso único, aprovado por uma pessoa. Comandos que não alcançam produção seguem sem esse bloqueio. O agente não consegue emitir o ticket nem editar a trava.",
+    "guardP1": "Um hook do Claude Code que inspeciona comandos de shell e edições de arquivo antes de executarem. Em produção, leitura simples passa livre; escrita e leitura de credenciais exigem um ticket de uso único, aprovado por uma pessoa. O agente não consegue emitir o ticket nem editar a trava.",
     "guardP2": "Operações destrutivas no ambiente também ficam bloqueadas até uma pessoa autorizar.",
     "readPrompt": "agente $",
     "readCommand": "docker logs app --tail 50",

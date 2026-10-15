@@ -15,15 +15,25 @@ export function SiteFooter() {
         <p className="mb-2 font-mono text-[13px] tracking-[0.08em] text-footer-muted">
           {t("footer.kicker")}
         </p>
-        <a
-          href={links.linkedin}
-          className="inline-flex items-baseline gap-2 text-2xl font-semibold tracking-[-0.03em] text-background no-underline focus-ring"
-        >
-          {t("footer.linkedin")}
-          <span aria-hidden="true" className="text-highlight-soft">
-            ↗
-          </span>
-        </a>
+        <div className="flex flex-wrap gap-x-8 gap-y-2">
+          <a
+            href={links.linkedin}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-baseline gap-2 text-2xl font-semibold tracking-[-0.03em] text-background no-underline focus-ring"
+          >
+            {t("footer.linkedin")}
+            <span aria-hidden="true" className="text-highlight-soft">
+              ↗
+            </span>
+          </a>
+          <a
+            href={links.email}
+            className="inline-flex items-baseline gap-2 text-2xl font-semibold tracking-[-0.03em] text-background no-underline focus-ring"
+          >
+            {t("footer.email")}
+          </a>
+        </div>
         <div className="mt-8 flex flex-wrap items-center justify-between gap-6 border-t border-inverse-line pt-6 text-sm text-footer-muted">
           <span>{t("footer.copy")}</span>
           <div className="flex gap-6">
@@ -32,12 +42,6 @@ export function SiteFooter() {
                 {t("footer.home")}
               </Link>
             ) : null}
-            <a
-              href={links.github}
-              className="text-background no-underline focus-ring"
-            >
-              {t("footer.github")}
-            </a>
             {onAi ? null : (
               <Link
                 href="/engenharia-com-ia"

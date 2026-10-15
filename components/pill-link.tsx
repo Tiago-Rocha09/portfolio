@@ -33,8 +33,14 @@ export function PillLink({
     );
   }
 
+  const external = href.startsWith("https://");
+
   return (
-    <a href={href} className={classes}>
+    <a
+      href={href}
+      className={classes}
+      {...(external && { target: "_blank", rel: "noopener noreferrer" })}
+    >
       {children}
     </a>
   );
